@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="background-color:red;">
+    <title>私人云盘</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .file-list { list-style-type: none; margin: 0; padding: 0; }
+        .file-list li { padding: 8px 0; border-bottom: 1px solid #ddd; }
+        .file-list li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+ 
+<h1>我的网盘</h1>
+ 
+<ul class="file-list">
+    <h2>
+        <li><a href="E:\exe\adm.exe" onclick="downloadFileli('adm.exe')">高速下载器 - adm.exe</a></li>
+        <li><a href="E:\exe\hmcl.exe" onclick="downloadFileli('hmcl.exe')">java我的世界启动器-hmcl.exe</a></li>
+        <li><a href="E:\exe\python13.0.exe" onclick="downloadFileli('python13.0.exe')">python - 13.0</a></li>
+        <li><a href="E:\exe\dev-cpp" onclick="downloadFileli('dev-cpp.exe')">c++编辑器 - dev-cpp</a></li>
+        <li><a href="E:\exe\pcl2.exe" onclick="downloadFileli('pcl2.exe')">java我的世界启动器-pcl2.exe</a></li>
+        <li><a href="E:\exe\bilibili_install.exe" onclick="downloadFileli('bilibili_install.exe')">看视频的b站哦</a></li>
+        <li><a href="E:\exe\QQ_install.exe" onclick="downloadFileli('QQ_install.exe')">聊天的QQ😊</a></li>
+        <li><a href="E:\XTC\ezroot.zip" onclick="downloadFileli('ezroot.zip')">小天才破解-ezroot</a></li>
+        <li><a href="E:\exe\ollama.exe" onclick="downloadFileli('ollama.exe')">服务器容器-ollama</a></li>
+        <li><a href="E:\exe\vmware.exe" onclick="downloadFileli('vmware.exe')">虚拟机-vmware</a></li>
+        <li><a href="E:\exe\vscode.exe" onclick="downloadFileli('vscode.exe')">代码编辑器-vscode</a></li>
+        <li><a href="E:\exe\刷机文件-QPST" onclick="downloadFileli('刷机文件-QPST.zip')">刷机文件-QPST</a></li>
+        <li><a href="E:\exe\刷机文件-MTKCLEAN" onclick="downloadFileli('刷机文件-MTKCLEAN.zip')">刷机文件-MTKCLEAN</a></li>    
+    </h2>
+    -->
+</ul>
+ 
+<script>
+function downloadFile(filename) {
+    const link = document.createElement('a');
+    link.href = `${filename}`;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+ 
+</body>
+</html>
